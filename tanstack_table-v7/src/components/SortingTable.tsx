@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import { useTable, useSortBy, HeaderGroup } from "react-table";
 import MOCK_DATA from "./MOCK_DATA.json";
 import { COLUMNS } from "./Columns";
@@ -7,7 +7,6 @@ import "./table.css";
 interface Row {
   [key: string]: any;
 }
-
 
 interface CustomColumn extends HeaderGroup<Row> {
   isSorted?: boolean;
